@@ -1,0 +1,454 @@
+/*ALL CLASSES AND IDS CAN BE FOUND IN ALPHABETICAL ORDER,*/ 
+/*CHILD/NESTED CLASSES AND IDS CAN BE FOUND DIRECTLY UNDER PARENT*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+	width: 100%;
+	height: auto;
+	background-color: #f2f2f2;
+}
+a {
+	text-decoration: none;
+}
+	
+/* a links */
+	a #postBox {
+		color: white;
+	}
+
+/*bibleBox*/
+	#bibleBox {
+		width: 100%;
+		height: 100%;
+		overflow: scroll;
+		overflow-x: hidden;
+		overflow-y: overlay;
+	}
+	#bibleBox a {
+			position: relative;
+			margin: 5px;
+			padding: 5px;
+			background-color: #888;
+			width: 170px;
+			height: auto;
+			display: block;
+			vertical-align: top;
+			color: white;
+			text-align: center;
+			border-radius: 4px;
+			text-decoration: none;
+		}
+	#bibleBox a:hover {
+		background-color: #777;
+	}
+
+/*defaultBody*/
+	#defaultBody {
+		margin: 60px 0px 0px 100px;
+		width: calc(100vw - 100px);
+		height: calc(100vh - 60px);
+		position: fixed;
+		text-decoration: none;
+		/*position: relative;
+		display: inline-block;
+		vertical-align: top;*/
+	}
+
+/*headerContainer*/
+	#headerContainer {
+		z-index: 10;
+		background-color: #de1414;
+		/*background-image:linear-gradient(to top, #de2131, #dea821);*/ /*Gives the header a gradient color*/
+		height: 60px;
+		width: 100%;
+		position: fixed;
+		border-bottom: 1px solid #444;
+		/*box-shadow: 0px 1px 1px #de2131;*/
+		/*overflow-y: hidden;*/
+		/*border-bottom: 1px solid #2d7c7d;*/
+	}
+	#headerContainer a {
+		color: white;
+		text-decoration: none;
+		position: fixed;
+		font-size: 40px;
+		top: 5px;
+		left: 12.5px;
+	}
+
+/*homeContainer*/
+	#homeContainer {
+		margin: 0px 0px 0px 0px;
+		color: white;
+		background-color: #f2f2f2;
+		border: 1px;
+		height: calc(100vh - 60px);
+		width: 100%;
+		text-align: center;
+		overflow-wrap: break-word;
+		overflow: scroll;
+		overflow-x: hidden;
+		overflow-y: overlay;
+		/*text-decoration: none;*/
+		/*display: inline-block;
+		vertical-align: top;*/
+		/*background-color: white*/
+		/*padding: 10px;*/
+	}
+	#homeContainer::-webkit-scrollbar {
+		width: 20px;
+	}
+	#homeContainer::-webkit-scrollbar-track {
+		/*border-radius: 5px;*/
+		background-color: #777;
+	}
+	#homeContainer::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background-color: #555;
+	}
+	#homeContainer::-webkit-scrollbar-thumb:hover {
+		background-color: #444;
+	}
+	#homeBanner {
+		padding: 10px;
+		margin-bottom: 10px;
+		color: white;
+		background-color: #2f96d6;
+		height: 80px;
+		width: calc(100vw - 80px);
+	}
+	#homePostBox {
+		position: relative;
+		/*width: calc(33vw);*/
+		width: 320px;
+		/*height: calc(20vh);*/
+		height: 180px;
+		background-color: #999;
+		text-align: center;
+		border-radius: 4px;
+		margin: 10px;
+		display: inline-block;
+		padding: 5px 15px 5px 5px;
+	}
+
+/*indexBody*/
+	#indexBody {
+		margin: 20px;
+		padding: 10px;
+		color: white;
+		background-color: #888;
+		border: 1px;
+		border-radius: 4px;
+		height: calc(100vh - 120px);
+	}
+	#indexBody a {
+		color: white;
+		text-decoration: none;
+		/*position: fixed;*/
+		/*font-size: 40px;*/
+		/*top: 80px;*/
+		/*left: 150px;*/
+	}
+
+/*newPost*/
+	#newPost {
+		margin: 50px auto auto auto;
+		width: 50%;
+		height: auto;
+		padding: 10px;
+		color: white;
+		background-color: #888;
+		border: 1px;
+		border-top-right-radius: 4px;
+		border-top-left-radius: 4px;
+		/*height: calc(100vh - 180px);*/
+	}
+	#newPost textarea {
+		border-radius: 4px;
+		resize: none;
+		width: calc(100% - 20px);
+		height: 235px;
+		padding: 10px;
+	}
+	#newPostSubmit {
+		margin: auto auto auto auto;
+		width: 50%;
+		height: auto;
+		padding:  0px 10px 10px 10px;
+		color: white;
+		background-color: #888;
+		border: 1px;
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+
+/*newWorkOut*/
+	#newWorkOut {
+		margin: 50px auto auto auto;
+		width: 50%;
+		height: 300px;
+		padding: 10px;
+		color: white;
+		background-color: #888;
+		border: 1px;
+		border-radius: 4px;
+		/*height: calc(100vh - 180px);*/
+	}
+
+/*PostBox*/
+	#postBox {
+		position: relative;
+		/*width: calc(33vw);*/
+		width: 320px;
+		/*height: calc(20vh);*/
+		height: 180px;
+		background-color: #999;
+		/*text-align: left;*/
+		border-radius: 4px;
+		margin: 10px 10px 10px 10px;
+		display: inline-block;
+		vertical-align: top;
+		padding: 5px 15px 5px 5px;
+		float: left;
+		/*text-decoration: none;*/
+	}
+	#postBoxBody {
+		/*position: fixed;*/
+		margin-top: 30px;
+		padding-right: 14px;
+		height: 140px;
+		width: 315px;
+		text-align: left;
+		overflow-wrap: break-word;
+		overflow: scroll;
+		overflow-x: hidden;
+		overflow-y: overlay;
+		white-space: pre-wrap;
+		/*text-decoration: none;*/
+	}
+	#postBoxBody a {
+		/*text-decoration: none;*/
+	}
+	#postBoxBody::-webkit-scrollbar {
+		width: 10px;
+	}
+	#postBoxBody::-webkit-scrollbar-track {
+		border-radius: 5px;
+		background-color: #777;
+	}
+	#postBoxBody::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background-color: #555;
+	}
+	#postBoxBody::-webkit-scrollbar-thumb:hover {
+		background-color: #444;
+	}
+	#postBoxContainer {
+		width: 100%;
+		margin: auto;
+		padding: 0px 0px 10px 0px;
+		text-align: center;
+		color: white;
+		border: 1px;
+		border-radius: 4px;
+		height: calc(100vh - 70px);
+		overflow-wrap: break-word;
+		overflow: scroll;
+		overflow-x: hidden;
+		overflow-y: overlay;
+		/*position: relative;
+		display: inline;
+		vertical-align: top;*/
+		/*background-color: white*/
+		/*padding: 10px;*/
+	}
+	#postBoxContainer::-webkit-scrollbar {
+		width: 20px;
+	}
+	#postBoxContainer::-webkit-scrollbar-track {
+		/*border-radius: 5px;*/
+		background-color: #777;
+	}
+	#postBoxContainer::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background-color: #555;
+	}
+	#postBoxContainer::-webkit-scrollbar-thumb:hover {
+		background-color: #444;
+	}
+	#postBoxDate {
+		position: absolute;
+		right: 10px;
+	}
+	#postBoxUserName {
+		position: absolute;
+	}
+
+/*postLink*/
+	#postLink {
+		z-index: 10;
+		position: fixed;
+		left: 105px;
+		top: 15px;
+		padding: 5px 5px 5px 5px;
+		background-color: white;
+		border-radius: 3px;
+	}
+	#postLink a {
+		color: #de1414;
+		text-decoration: none;
+	}
+
+/*sideBar*/
+	#sideBar {
+		z-index: 9;
+		position: fixed;
+		width: 100px;
+		padding-top: 60px;
+		height: 96vh;
+		color: white;
+		background-color: #555;
+		border-right: 1px solid #444;
+		/*background-image:linear-gradient(to bottom, #eb3446, #fccb4e);*/
+		text-align: center;
+		/*box-shadow: 0px 2px 5px #de2131;*/
+		/*max-width: 50%;*/
+	}
+	#sideBar a {
+		position: relative;
+		text-decoration: none;
+		text-align: center;
+		color: white;
+		display: block;
+		width: auto;
+		height: auto;
+		border-bottom: 1px solid #444;
+		padding: 15px 10px 15px 10px;
+	}
+	#sideBar a:hover {
+		background-color: #444;
+	}
+
+/*signInHeader*/
+	#signInHeader {
+		z-index: 10;
+		position: fixed;
+		top: 10px;
+		right: 5px;
+		text-align: none;
+		/*width: 60%;*/
+	}
+	#signInHeader input {
+		width: 110px;
+		border-radius: 4px;
+		border: none;
+		padding: 2px;
+		/*width: 60%;*/
+	}
+	#signInHeader button {
+		background-color: white;
+		border: none;
+		border-radius: 2px;
+		color: #003c61;
+		padding: 4px;
+		box-shadow: 2px;
+	}
+	
+/*signOutLink*/
+	#signOutLink {
+		z-index: 10;
+		position: fixed;
+		right: 5px;
+		top: 35px;
+	}
+	#signOutLink a {
+		color: white;
+		text-decoration: none;
+	}
+
+/*signOutUserName*/
+	#signOutUserName  {
+		z-index: 10;
+		position: fixed;
+		right: 5px;
+	}
+	#signOutUserName p {
+		text-align: none;
+		color: white;
+		font-size: 30px;
+	}
+
+/*signUp*/
+	#signUp {
+		z-index: 11;
+		position: fixed;
+		top: 35px;
+		right: 5px;
+	}
+	#signUp a {
+		color: white;
+		text-decoration: none;
+	}
+
+/*signUpBody*/
+	#signUpBody {
+		margin: 20px;
+		padding: 20px;
+		color: white;
+		background-color: #006080;
+		border-radius: 4px;
+		width: 300px;
+		/*height: 95vh;*/
+	}
+	#signUpBody input {
+		border-radius: 4px;
+		border-style: none;
+		padding: 3px;
+		margin: 1px;
+		position: relative;
+		float: right;
+	}
+	#signUpBody input[type=submit] {
+		background-color: white;
+		border: none;
+		color: #555;
+		padding: 10px;
+		float: none;
+		display: block;
+		margin: 10px auto;
+		text-decoration: none;
+		/*position: relative;*/
+	}
+	#signUpBody label {
+		display: inline-block;
+		padding: 5px 0px;
+		margin: 0px 0px;
+		/*float: left;*/
+		/*clear: left;*/
+	}
+
+	/*userBox*/
+		#userBox {
+			width: 100%;
+			height: 100%;
+		}
+		#userBox a {
+			position: relative;
+			margin: 10px;
+			padding: 20px;
+			background-color: #888;
+			width: 100px;
+			height: 70px;
+			display: inline-block;
+			vertical-align: top;
+			color: white;
+			text-align: center;
+			border-radius: 4px;
+			text-decoration: none;
+		}
+		#userBox a:hover {
+			background-color: #777;
+		}
